@@ -1,0 +1,21 @@
+<div class="relative">
+    <div class="mx-auto flex max-w-5xl flex-wrap content-center py-20 md:flex-row md:items-stretch md:justify-center md:py-24">
+        <h5 class="font-bold text-[#6415ff] mb-4"><span class="font-bold uppercase tracking-widest text-[#6415ff]">Features</span></h5>
+        <h2 class="text-center text-[#243E63] text-2xl font-black sm:text-5xl w-full tracking-wide leading-loose">We have Amazing <span
+                class="text-[#6415ff]">Service.</span></h2>
+        <p class="mt-4 max-w-xl text-sm font-medium leading-relaxed text-gray-500 md:text-base lg:text-lg w-full text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.</p>
+        <div class="mt-10 w-full"></div>
+        <div *ngFor="let item of items" class="max-w-sm md:w-1/2 lg:w-1/3">
+            <div class="hJrmjh">
+                <span class="flex-shrink-0 rounded-full border p-5 text-center">
+                    <img src="{{item.src}}">
+                </span>
+                <span class="mt-4 sm:ml-4 sm:mt-2">
+                    <span class="title mt-4 text-2xl font-bold leading-none tracking-wider">{{ item.title }}</span>
+                    <p class="mt-4 font-medium leading-loose text-gray-400 sm:mt-">{{ item.description }}</p>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+<div class="relative">
+    <div class="mx-auto flex max-w-7xl flex-col items-center justify-between py-20 md:flex-row md:py-24">
+        <div class="mx-auto w-full max-w-7xl md:mx-0 md:max-w-none"><img
+                src="https://treact.owaiskhan.me/static/media/prototype-illustration.21bc4b3f612a2f257c3d361067582485.svg">
+        </div>
+        <div class="mx-auto w-full max-w-7xl md:mx-0 md:max-w-none mt-16 md:mt-0 md:order-first md:mr-12 lg:mr-16">
+            <div class="text-center md:text-left lg:py-8">
+                <h5 class="text-center md:text-left font-bold text-[#6415FF]"><span
+                        class="font-bold uppercase tracking-wider text-[#6415FF]">VALUES</span></h5>
+                <h2 class="text-center text-2xl text-[#243E63] md:text-3xl font-extrabold tracking-wide leading-loose fOLvTQ">We Always Abide by Our <span
+                        class="text-[#6415FF]">Principles.</span></h2>
+                <p class="mt-8 text-center text-sm font-medium leading-relaxed text-gray-500 md:text-left md:text-base lg:text-lg tracking-wide ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                <div class="grid grid-cols-1 gap-4 md:grid-cols-2" *ngIf="items.length > 0">
+                    <div *ngFor="let item of items">
+                        <div class="mt-10 flex flex-col items-center md:mr-8 md:items-start lg:mt-8 last:mr-0">
+                            <div class="flex items-center">
+                                <div class="flex justify-center items-center w-8 h-8 flex-shrink-0 text-center p-2 rounded-full border-0 bg-green-300">
+                                    <fa-icon class="text-green-700" *ngIf="item.icon" [icon]="item.icon"></fa-icon>
+                                </div>
+                                <div class="ml-3 text-xl text-[#243E6C] font-bold">{{item.title}}</div>
+                            </div>
+                            <div class="mt-4 text-center leading-relaxed text-gray-500 md:text-left tracking-tight md:tracking-wide">
+                                {{item.description}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
