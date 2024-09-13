@@ -1,52 +1,68 @@
-@import url('https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900&display=swap'); 
-  body {  
-    font-family:Inter, system-ui;
-    color:rgb(36 62 99 / var(--tw-text-opacity));
-    line-height:inherit;
-  }  
+  body {
+    font-family: "Inter", sans-serif;
+  }
 
-  .fOLvTQ { 
-    margin-top: 1rem; 
-    text-align: center; 
-    font-size: 1.875rem; 
-    font-weight: 900; 
-    line-height: 1.25;
-  } 
-  
-  @media (min-width: 640px){ 
-  .fOLvTQ { 
-    font-size: 2.25rem;
-  } 
-  }     
-  
-  @media (min-width: 768px){ 
-  .fOLvTQ { 
-    text-align: left;
-  } 
-  }     
-  
-  @media (min-width: 1024px){ 
-  .fOLvTQ { 
-    font-size: 3rem;
-  } 
-  }     
-  
-  .hJrmjh { 
-    margin-left: 1rem; 
-    margin-right: 1rem; 
-    display: flex; 
-    height: 100%; 
-    flex-direction: column; 
-    -webkit-box-align: center; 
-    align-items: center; 
-    padding: 2rem 0.5rem; 
+  .fOLvTQ {
+    margin-top: 1rem;
     text-align: center;
-} 
+    font-size: 1.875rem;
+    font-weight: 900;
+    line-height: 1.25;
+  }
 
-@media (min-width: 640px){ 
-  .hJrmjh { 
-    flex-direction: row; 
-    align-items: flex-start; 
-    text-align: left;
-  } 
-}     
+  @media (min-width: 640px) {
+    .fOLvTQ {
+      font-size: 2.25rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .fOLvTQ {
+      text-align: left;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .fOLvTQ {
+      font-size: 3rem;
+    }
+  }
+
+
+
+  @media (min-width: 768px) {
+    .fcZJhT {
+      text-align: left;
+      font-size: 1rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .fcZJhT {
+      font-size: 1.125rem;
+    }
+  }
+
+  .hJrmjh {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 2rem 0.5rem;
+    text-align: center;
+  }
+
+  @media (min-width: 640px) {
+    .hJrmjh {
+      flex-direction: row;
+      align-items: flex-start;
+      text-align: left;
+    }
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }

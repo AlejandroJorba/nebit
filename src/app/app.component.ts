@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
 import { HeroComponent } from './components/hero/hero.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ServicesComponent } from './components/services/services.component';
@@ -13,7 +13,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CommonModule, HeroComponent, FooterComponent, ServicesComponent, PrinciplesComponent, HeroEsComponent, FooterEsComponent, ServicesEsComponent, PrinciplesEsComponent],
+  imports: [RouterOutlet, RouterModule, CommonModule, HeroComponent, FooterComponent, ServicesComponent, PrinciplesComponent, HeroEsComponent, FooterEsComponent, ServicesEsComponent, PrinciplesEsComponent],
   templateUrl: './app.component.html'
 })
 export class AppComponent {

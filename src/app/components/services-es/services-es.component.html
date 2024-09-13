@@ -1,21 +1,34 @@
-<div class="relative">
-    <div class="mx-auto flex max-w-5xl flex-wrap content-center py-20 md:flex-row md:items-stretch md:justify-center md:py-24">
-        <h5 class="font-bold text-[#6415ff] mb-4"><span class="font-bold uppercase tracking-widest text-[#6415ff]">Features</span></h5>
-        <h2 class="text-center text-[#243E63] text-2xl font-black sm:text-5xl w-full tracking-wide leading-loose">We have Amazing <span
-                class="text-[#6415ff]">Service.</span></h2>
-        <p class="mt-4 max-w-xl text-sm font-medium leading-relaxed text-gray-500 md:text-base lg:text-lg w-full text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua.</p>
-        <div class="mt-10 w-full"></div>
-        <div *ngFor="let item of items" class="max-w-sm md:w-1/2 lg:w-1/3">
-            <div class="hJrmjh">
-                <span class="flex-shrink-0 rounded-full border p-5 text-center">
-                    <img src="{{item.src}}">
-                </span>
-                <span class="mt-4 sm:ml-4 sm:mt-2">
-                    <span class="title mt-4 text-2xl font-bold leading-none tracking-wider">{{ item.title }}</span>
-                    <p class="mt-4 font-medium leading-loose text-gray-400 sm:mt-">{{ item.description }}</p>
-                </span>
-            </div>
+<div class="">
+    <div class="mx-auto flex max-w-5xl flex-wrap content-center py-20 md:py-24">
+        <!-- Título y descripción principal -->
+        <div class="w-full text-center mb-8">
+            <h5 class="font-bold text-[#0848AF] uppercase tracking-widest mb-2">Servicios</h5>
+            <h2 class="text-[#243E63] text-2xl font-black sm:text-5xl tracking-wide">
+                Desarrollando el <span class="text-[#0848AF]">Futuro.</span>
+            </h2>
+            <p class="mt-4 max-w-xl mx-auto text-sm font-medium leading-relaxed text-gray-500 md:text-base lg:text-lg">
+                Ofrecemos un portafolio de servicios diseñados para optimizar tus operaciones y llevar tu empresa hacia
+                nuevas oportunidades de crecimiento.
+            </p>
         </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 w-full">
+          <div *ngFor="let item of items" class="flex items-start cursor-pointer transition duration-300 hover:bg-gray-50 p-4 rounded-lg">
+              <!-- Ícono a la izquierda con tamaño ajustado y centrado -->
+              <div class="flex-shrink-0 w-12 h-12 flex items-start justify-end mr-4">
+                  <fa-icon [icon]="item.icon" class="text-[#0848AF] text-2xl"></fa-icon>
+              </div>
+      
+              <!-- Texto (título y descripción) alineado a la izquierda -->
+              <div class="text-left flex-1">
+                  <h3 class="text-lg font-bold text-gray-800 break-words">{{ item.title }}</h3>
+                  <p class="mt-2 text-sm font-medium text-gray-500 leading-relaxed break-words">
+                      {{ item.description }}
+                  </p>
+              </div>
+          </div>
+      </div>
+      
+          
     </div>
 </div>
